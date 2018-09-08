@@ -1,27 +1,34 @@
 // This document is for GET and POST Requests from the Survey
+var path = require('path');
+var friends = require('../data/friend.js')
 
-// GET results based on the User input
- $.get("/api/friends/" + friendsAr, function(data) {
-    console.log(data);
-    if (data) {
-      $("#stats").show();
-      $("#name").text(data.name);
-      $("#role").text(data.role);
-      $("#age").text(data.age);
-      $("#force-points").text(data.forcePoints);
-    }
-    else {
-      $("#name").text("The force is not strong with this one. Your character was not found.");
-      $("#stats").hide();
-    }
+// GET data fron the friends.js file
+ app.get("/api/friends", function(data) {
+   res.sendFile(friends);
   });
 
 
 // POST results that match the users input.
- $.post("/api/friends", userInput, function(){
+app.post('/api/friends', userInput)
+    .done(function(data) {
+  
+  var userInput = req.params.body;
+  var userInfo = userInput.scores;
+
+  var newFriend = "";
+  var newFriendImage = "";
+
+ //JS for friends.js file
+ for(var i = 0; i < friends.length; i++){
+   var difference = 0;
+   for(var j = 0; j < userInfo.length; j++){
+     difference = math.abs(friends[i].scores[j]-userInfo[j]);
+   }
+ }
 
 
- })
- 
- 
+
+ //  Pop open the modal dialog
+ $('#modal1').modal('open');
+});
 

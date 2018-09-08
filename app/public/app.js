@@ -1,13 +1,5 @@
 $(document).ready(function() {
-    // Jquery for dropdown buttons
-
-
-    // $(".dropdown-toggle").click(function(){
-        // $(".dropdown-menu").show();
-    // })
-
-    // Jquery for submit button and userinput
-    $(".btn-primary").on("click", function(e){
+        $(".btn-primary").on("click", function(e){
         e.preventDefault();
     
     var userInput = {
@@ -23,11 +15,11 @@ $(document).ready(function() {
             $('#question7').val().trim(),
             $('#question8').val().trim(),
             $('#question9').val().trim(),
-            $('#question10').val().trim(),
+            $('#question10').val().trim()
 
         ]
     };
-    console.log("The user selected " + userInput);
+    console.log("The user selected " + JSON.stringify(userInput));
     })
 
     
