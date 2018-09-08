@@ -2,9 +2,9 @@ $(document).ready(function() {
     // Jquery for dropdown buttons
 
 
-    $(".dropdown-toggle").click(function(){
-        $(".dropdown-menu").show();
-    })
+    // $(".dropdown-toggle").click(function(){
+        // $(".dropdown-menu").show();
+    // })
 
     // Jquery for submit button and userinput
     $(".btn-primary").on("click", function(e){

@@ -1,0 +1,66 @@
+body{
+    background-image: url('https://images.unsplash.com/photo-1507539989371-99615e449486?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d2496c32c17fdfa9616fe86b1ed3de6f&auto=format&fit=crop&w=1129&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Jumbotron CSS below*/
+.jumbotron{
+    color: white;
+    background-color: rgb(186,144,97);
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    width: 50%; 
+    border: 5px solid black;
+    box-shadow: 5px 5px black;
+    
+}
+
+.btn{
+    background-color: rgb(240,148,87);
+    border: 2px solid black;
+}
+
+/* Jumbotron CSS ends */
+
+/* -----------------Seperator--------------------------- */
+
+/* Survey Page CSS */
+#title{
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+#qTitle{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+form{
+    color: white;
+}
+
+.col-sm-12{
+    max-width: 750px;
+    margin: auto;
+}
+
+h3{
+   text-decoration: underline;
+}
+
+#submitButton{
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    background-color: purple;
+    border-color: purple; 
+}
+
